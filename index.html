@@ -6,14 +6,14 @@
     <meta name="description" content="Explora mundos épicos con nuestro juego de cartas de rol para mesas: Nombre del Juego.">
     <meta name="keywords" content="juego de cartas, rol, mesas, rpg, pixel art, batallas, aventura">
     <meta name="author" content="Nahuel">
-    <title>Card Pixel</title>
+    <title>Etheros - Juego de Cartas</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 <body>
     <nav class="nav">
         <div>
-            <h3>CardPixel</h3>
+            <h3>Etheros</h3>
         </div>
         <div class="nav-links">
             <a href="#">Inicio</a>
@@ -108,8 +108,34 @@
             </div>
         </div>
     </section>
+    <section class="section-form">
+        <div>
+            <h1>¡Obtén tu juego de cartas ahora!</h1>
+        </div>
+        <div class="section-form-content">
+            <form action="/submit_form" method="post">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required><br><br>
+              
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="TuCorreo@gmail.com" required><br><br>
+              
+                <label>Tipo de Edicion:</label><br>
+                <input type="radio" id="paper" name="paquete" value="paper" required>
+                <label for="paper">Paper</label><br>
+              
+                <input type="radio" id="standar" name="paquete" value="standar" required>
+                <label for="standar">Standar</label><br>
+              
+                <input type="radio" id="deluxe" name="paquete" value="deluxe" required>
+                <label for="deluxe">Deluxe</label><br><br>
+              
+                <input class="btn-form" type="submit" value="Hace tu pedido">
+              </form>
+        </div>
+    </section>
     <footer>
-        <p>&copy; 2024 [Nombre]. Todos los derechos reservados.</p>
+        <p>&copy; 2024 Leyendas de Etheros. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
