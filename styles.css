@@ -5,6 +5,10 @@
   --color-secundario: #434d4f;
   --color-resaltar: #7b6653;
   --color-fondo: #c8b08c;
+
+  --color-amarillo: #fcc718;
+  --color-verde: #5eaf8e;
+  --color-rojo: #b22128 ;
 }
   
 
@@ -155,6 +159,11 @@ h5{
     padding: 0;
 }
 
+.header-content h1{
+    color: var(--color-amarillo);
+    filter: drop-shadow(5px 5px 5px black);
+}
+
 /* SECCION 1 VIDEO TRAILER */
 .info{
     background-color: var(--color-fondo);
@@ -257,7 +266,7 @@ h5{
 
 .icon{
     border-radius: 50%;
-    border: 2px solid #5eaf8e;
+    border: 2px solid var(--color-verde);
     filter: drop-shadow(5px 1px 1px black);
     height: 72px;
     width: 72px;
@@ -365,7 +374,7 @@ footer p{
 #btn-adq:not(:disabled):hover,
 #btn-adq:not(:disabled):focus {
   outline: 0;
-  background: #ffd541;
+  background: var(--color-amarillo);
   box-shadow: 0 0 0 2px #ffffff, 0 3px 8px 0 #ffffff;
 }
 
@@ -517,7 +526,7 @@ footer p{
 
 /*BOTON FORMULARIO*/
 .btn-form {
-    background-color: #ffd541;
+    background-color: var(--color-amarillo);
     border-radius: 2px;
     color: var(--color-secundario);
     cursor: pointer;
