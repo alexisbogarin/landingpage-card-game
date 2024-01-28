@@ -6,8 +6,10 @@
     <meta name="description" content="Explora mundos épicos con nuestro juego de cartas de rol para mesas: Nombre del Juego.">
     <meta name="keywords" content="juego de cartas, rol, mesas, rpg, pixel art, batallas, aventura">
     <meta name="author" content="Nahuel">
-    <title>Etheros - Juego de Cartas</title>
+    <title>L d E - Juego de Cartas</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </head>
 <body>
@@ -16,24 +18,24 @@
             <h3>L d E</h3>
         </div>
         <div class="nav-links">
-            <a href="#">Inicio</a>
-            <a href="#">Aventura</a>
-            <a href="#">Personajes</a>
-            <a href="#">Gameplays</a>
-            <a href="#" id="btn-adq">Adquirir Ya</a>
+            <a href="#Inicio">Inicio</a>
+            <a href="#Aventura">Aventura</a>
+            <a href="#Personajes">Personajes</a>
+            <a href="#Gameplay">Gameplays</a>
+            <a href="#Form" id="btn-adq">Adquirir Ya</a>
         </div>
         <button class="menu-button">Menú</button>
     </nav>
-    <section class="header">
+    <section id="Inicio" class="header">
         <div class="header-content">
             <img id="milogo" src="img/logo.png" height="200px" alt="Logo Juego Cartas">
             <h1>Leyenda de Etheros</h1>
             <h5>¡Juego de cartas de estrategia!</h5>
-            <a href="#" class="btn-comprar">¡Lo quiero!</a>
+            <a href="#Form" class="btn-comprar">¡Lo quiero!</a>
         </div>
     </section>
     <!--SECCION VIDEO TRAILER  -->
-    <section class="info">
+    <section id="Aventura" class="info">
         <div class="info-content">
             <div class="info-text">
                 <h1>¡Entra al Universo!</h1>
@@ -45,7 +47,7 @@
         </div>
     </section>
     <!--SECCION DE PERSONAJES  -->
-    <section class="section-character">
+    <section id="Personajes" class="section-character">
         <div class="section-content">
             <div>
                 <h1>¡CONVIERTE TU IMAGINACIÓN EN AVENTURA!</h1>
@@ -67,7 +69,7 @@
         </div>
     </section>
     <!--SECCION HABILIDADES ENEMIGO  -->
-    <section class="section-enemy">
+    <section id="Personajes" class="section-enemy">
         <div class="section-content">
             <div class="section-content-inner">
                 <div class="section-content-icon">
@@ -96,7 +98,7 @@
         </div>
     </section>
     <!--SECCION VIDEO GAMEPLAY  -->
-    <section class="section-video">
+    <section id="Gameplay" class="section-video">
         <div class="section-video-content">
             <div>
                 <h1>¡Vamos! ¡Todos juntos!</h1>
@@ -109,12 +111,12 @@
             </div>
         </div>
     </section>
-    <section class="section-form">
+    <section id="Form" class="section-form">
         <div>
             <h1>¡Obtén tu juego de cartas ahora!</h1>
         </div>
         <div class="section-form-content">
-            <form action="/submit_form" method="post">
+            <form action="" method="">
                 <label for="nombre">Nombre:</label><br>
                 <input type="text" id="nombre" name="nombre" placeholder="Tu Nombre" required><br><br>
               
@@ -123,13 +125,13 @@
               
                 <label>Tipo de Edicion:</label><br>
                 <input type="radio" id="paper" name="paquete" value="paper" required>
-                <label for="paper">Paper</label><br>
+                <label class="paper" for="paper">Paper</label><br>
               
                 <input type="radio" id="standar" name="paquete" value="standar" required>
-                <label for="standar">Standar</label><br>
+                <label class="standar" for="standar">Standar</label><br>
               
                 <input type="radio" id="deluxe" name="paquete" value="deluxe" required>
-                <label for="deluxe">Deluxe</label><br><br>
+                <label class="deluxe" for="deluxe">Deluxe</label><br><br>
               
                 <input class="btn-form" type="submit" value="Hace tu pedido">
               </form>

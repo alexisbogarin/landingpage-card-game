@@ -523,6 +523,86 @@ footer p{
     font-size: 20px;
 }
 
+.section-form input{
+    padding: 10px;
+    border: 3px solid var(--color-principal);
+}
+
+
+.section-form-content input[type=radio]{
+    margin-bottom: 10px;
+}
+
+/* ESTILOS BANDERIN DEL FORMULARIO */
+
+.section-form-content .paper{
+    position: relative;
+    background-color: var(--color-verde);
+    border-radius: 2px;
+    padding: 0px 12px;
+    display: inline-block;
+}
+
+.section-form-content .paper::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px; /* ajusta este valor según el tamaño de la punta */
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid var(--color-verde); /* Usa el mismo color que el fondo del banderín */
+}
+
+.section-form-content .standar{
+    position: relative;
+    background-color: var(--color-rojo);
+    border-radius: 2px;
+    padding: 0px 12px;
+    display: inline-block;
+}
+
+.section-form-content .standar::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px; /* ajusta este valor según el tamaño de la punta */
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid var(--color-rojo);
+}
+
+.section-form-content .deluxe{
+    position: relative;
+    background-color: var(--color-amarillo);
+    border-radius: 2px;
+    padding: 0px 12px;
+    display: inline-block;
+}
+
+.section-form-content .deluxe::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -10px; /* ajusta este valor según el tamaño de la punta */
+    transform: translateY(-50%);
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid var(--color-amarillo); /* Usa el mismo color que el fondo del banderín */
+}
+
+/* FIN DE LOS ESTILOS BANDERIN FORMULARIO */
+
+.section-form-content{
+    border: 10px solid var(--color-principal);
+    box-shadow: 0px 5px 5px var(--color-resaltar);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    width: 400px;
+}
+
 
 /*BOTON FORMULARIO*/
 .btn-form {
@@ -556,13 +636,5 @@ footer p{
   cursor: not-allowed;
 }
 
-.section-form-content{
-    border: 1px solid var(--color-resaltar);
-    box-shadow: 0px 5px 5px var(--color-secundario);
-    padding: 20px 20px;
-    display: flex;
-    justify-content: center;
-    width: 400px;
-}
 
 
