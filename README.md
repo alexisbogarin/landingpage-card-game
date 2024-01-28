@@ -7,3 +7,5 @@
    <li>CSS</li>
    <li>JS</li>
 </ul>
+
+© Alexis Bogarin Copyright
